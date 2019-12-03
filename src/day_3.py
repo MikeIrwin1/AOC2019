@@ -12,7 +12,7 @@ def find_steps(directions):
     for step in directions:
         d = step[:1]
         l = int(step[1:])
-        for n in range(l):
+        for _ in range(l):
             x += dx[d]
             y += dy[d]
             points.add((x,y))
